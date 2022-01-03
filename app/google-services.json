@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "295523943377",
+    "project_id": "locarv2-2d003",
+    "storage_bucket": "locarv2-2d003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295523943377:android:4a03067c7964a5696d96f0",
+        "android_client_info": {
+          "package_name": "com.example.locarv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295523943377-ve38jkpb28kn80bglesjkg1282hs8546.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkFgw41dJUS4qRhcc1raLQEOf3783JybM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295523943377-ve38jkpb28kn80bglesjkg1282hs8546.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
