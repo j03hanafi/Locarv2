@@ -26,6 +26,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Locarv2">
         <activity
+            android:name=".DetailOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="true" />
+        <activity
             android:name=".Admin.AdminHomeActivity"
             android:exported="false" />
         <activity
