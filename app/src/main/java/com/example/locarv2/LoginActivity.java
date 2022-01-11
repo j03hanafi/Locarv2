@@ -45,4 +45,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, PhoneLoginActivity.class);
         startActivity(intent);
     }
+
+    public void emailLoginClick(View view) {
+        Intent intent = new Intent(LoginActivity.this, EmailLoginActivity.class);
+        startActivity(intent);
+    }
 }

@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -35,7 +36,6 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.installations.FirebaseInstallations;
 import com.hbb20.CountryCodePicker;
 
-import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import retrofit2.Call;
@@ -48,6 +48,7 @@ public class PhoneLoginActivity extends AppCompatActivity {
     private EditText phoneEditText;
     private PinView firstPinView;
     private ConstraintLayout phoneLayout;
+    private Button signInBtn;
     private String selected_country_code = "+62";
     private static final int CREDENTIAL_PICKER_REQUEST = 120 ;
     private ProgressBar progressBar;
@@ -85,6 +86,7 @@ public class PhoneLoginActivity extends AppCompatActivity {
         firstPinView  = findViewById(R.id.firstPinView);
         phoneLayout = findViewById(R.id.phoneLayout);
         progressBar = findViewById(R.id.progressBar);
+        signInBtn = findViewById(R.id.button_signUp);
         mAuth = FirebaseAuth.getInstance();
         apiInterface = APIClient.getAPIClient().create(APIInterface.class);
 
@@ -98,23 +100,10 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
 
         // Phone input listener
-        phoneEditText.addTextChangedListener(new TextWatcher() {
+        signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                if (charSequence.toString().length() == 11) {
-                    sendOTP();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
+            public void onClick(View view) {
+                sendOTP();
             }
         });
 
@@ -240,7 +229,7 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
                         if (task.isSuccessful()) {
 
-                            Call<UserCredentials> call = apiInterface.user_login(selected_country_code + phoneEditText.getText().toString(), device_token);
+                            Call<UserCredentials> call = apiInterface.user_login_phone(selected_country_code + phoneEditText.getText().toString());
                             call.enqueue(new Callback<UserCredentials>() {
                                 @Override
                                 public void onResponse(Call<UserCredentials> call, Response<UserCredentials> response) {
@@ -309,5 +298,10 @@ public class PhoneLoginActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
         Animatoo.animateSlideLeft(PhoneLoginActivity.this);
+    }
+
+    public void register(View view) {
+        Intent intent = new Intent(PhoneLoginActivity.this, RegisterActivity.class);
+        startActivity(intent);
     }
 }

@@ -20,6 +20,24 @@ public class Users {
     @SerializedName("phone")
     @Expose
     private String phone;
+    @SerializedName("jenis_kelamin")
+    @Expose
+    private String jenisKelamin;
+    @SerializedName("alamat")
+    @Expose
+    private String alamat;
+    @SerializedName("photo")
+    @Expose
+    private Object photo;
+    @SerializedName("activated")
+    @Expose
+    private Integer activated;
+    @SerializedName("group_user")
+    @Expose
+    private Integer groupUser;
+    @SerializedName("last_login")
+    @Expose
+    private String lastLogin;
     @SerializedName("created_at")
     @Expose
     private String createdAt;
@@ -65,6 +83,54 @@ public class Users {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getJenisKelamin() {
+        return jenisKelamin;
+    }
+
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public Object getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(Object photo) {
+        this.photo = photo;
+    }
+
+    public Integer getActivated() {
+        return activated;
+    }
+
+    public void setActivated(Integer activated) {
+        this.activated = activated;
+    }
+
+    public Integer getGroupUser() {
+        return groupUser;
+    }
+
+    public void setGroupUser(Integer groupUser) {
+        this.groupUser = groupUser;
+    }
+
+    public String getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(String lastLogin) {
+        this.lastLogin = lastLogin;
     }
 
     public String getCreatedAt() {

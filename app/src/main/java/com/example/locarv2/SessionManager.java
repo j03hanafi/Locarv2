@@ -16,7 +16,7 @@ public class SessionManager {
     private static final String LOGIN = "IS_LOGIN";
     public static final String USER_ID = "USER_ID";
     public static final String USER_TYPE = "USER_TYPE";
-    public static final String USER_PHONE = "USER_PHONE";
+    public static final String USER_CRED = "USER_CRED";
     public static final String COUNTRY_CODE = "COUNTRY_CODE";
     public static final String SANCTUM_TOKEN = "SANCTUM_TOKEN";
 
@@ -27,12 +27,12 @@ public class SessionManager {
 
     }
 
-    public void createSession(String user_id, String user_type, String user_phone, String country_code, String sanctum_token) {
+    public void createSession(String user_id, String user_type, String user_cred, String country_code, String sanctum_token) {
 
         editor.putBoolean(LOGIN, true);
         editor.putString(USER_ID, user_id);
         editor.putString(USER_TYPE, user_type);
-        editor.putString(USER_PHONE, user_phone);
+        editor.putString(USER_CRED, user_cred);
         editor.putString(COUNTRY_CODE, country_code);
         editor.putString(SANCTUM_TOKEN, sanctum_token);
         editor.apply();
@@ -47,7 +47,7 @@ public class SessionManager {
         HashMap<String, String> user = new HashMap<>();
         user.put(USER_ID, sharedPreferences.getString(USER_ID, null));
         user.put(USER_TYPE, sharedPreferences.getString(USER_TYPE, null));
-        user.put(USER_PHONE, sharedPreferences.getString(USER_PHONE, null));
+        user.put(USER_CRED, sharedPreferences.getString(USER_CRED, null));
         user.put(COUNTRY_CODE, sharedPreferences.getString(COUNTRY_CODE, null));
         user.put(SANCTUM_TOKEN, sharedPreferences.getString(SANCTUM_TOKEN, null));
 
