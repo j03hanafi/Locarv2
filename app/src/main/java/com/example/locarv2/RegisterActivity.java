@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +13,7 @@ import android.widget.Toast;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.locarv2.responses.APIClient;
 import com.example.locarv2.responses.APIInterface;
-import com.example.locarv2.responses.UserCredentials;
+import com.example.locarv2.Models.UserCredentials;
 import com.hbb20.CountryCodePicker;
 
 import retrofit2.Call;

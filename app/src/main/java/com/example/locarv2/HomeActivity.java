@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.locarv2.Fragments.HomeFragment;
+import com.example.locarv2.Fragments.ListMobilFragment;
 import com.example.locarv2.Services.Constants;
 import com.example.locarv2.Services.LocationService;
 import com.google.android.material.snackbar.Snackbar;
@@ -105,7 +106,6 @@ public class HomeActivity extends AppCompatActivity {
                 if (item.getItemId() == R.id.nav_setting) {
                     Intent intent = new Intent(HomeActivity.this, EditUserProfileActivity.class);
                     startActivity(intent);
-                    finish();
                     Animatoo.animateSlideLeft(HomeActivity.this);
 
                     drawer.close();

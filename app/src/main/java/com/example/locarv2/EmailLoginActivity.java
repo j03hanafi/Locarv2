@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.locarv2.responses.APIClient;
 import com.example.locarv2.responses.APIInterface;
-import com.example.locarv2.responses.UserCredentials;
+import com.example.locarv2.Models.UserCredentials;
 
 import retrofit2.Call;
 import retrofit2.Callback;

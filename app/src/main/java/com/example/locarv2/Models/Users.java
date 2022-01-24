@@ -1,4 +1,4 @@
-package com.example.locarv2.responses;
+package com.example.locarv2.Models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

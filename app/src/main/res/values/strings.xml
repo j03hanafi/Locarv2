@@ -10,4 +10,34 @@
 
     <string name="menu_home">Locar</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="cars">
+        <item>BMW 3 SERIES</item>
+        <item>BMW X6 SERIES</item>
+        <item>TESLA MODEL 3</item>
+        <item>TESLA MODEL S</item>
+        <item>TOYOTA NEW RUSH</item>
+        <item>TOYOTA VIOS</item>
+        <item>BMW 3 SERIES</item>
+        <item>BMW X6 SERIES</item>
+        <item>TESLA MODEL 3</item>
+        <item>TESLA MODEL S</item>
+        <item>TOYOTA NEW RUSH</item>
+        <item>TOYOTA VIOS</item>
+    </string-array>
+    <string-array name="price">
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+        <item>Rp 1.2350.000 / 24 Hour</item>
+    </string-array>
 </resources>

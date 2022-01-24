@@ -32,18 +32,16 @@ public class LocationService extends Service {
 
 
     private LocationCallback locationCallback = new LocationCallback() {
+        double latitude;
+        double longitude;
         @Override
         public void onLocationResult(@NonNull LocationResult locationResult) {
             super.onLocationResult(locationResult);
             if (locationResult != null && locationResult.getLastLocation() != null) {
-                double latitude = locationResult.getLastLocation().getLatitude();
-                double longitude = locationResult.getLastLocation().getLongitude();
-                Log.d("Location update", latitude + ". " + longitude);
-
-                Toast.makeText(LocationService.this, latitude + ". " + longitude, Toast.LENGTH_SHORT).show();
+                latitude = locationResult.getLastLocation().getLatitude();
+                longitude = locationResult.getLastLocation().getLongitude();
 
                 sessionManager = new SessionManager(getApplicationContext());
-
 
             }
         }

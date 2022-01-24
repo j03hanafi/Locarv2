@@ -26,7 +26,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="Title"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +37,7 @@
                 android:layout_marginTop="8dp"
                 android:text="Harga"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/carsName"
                 app:layout_constraintTop_toBottomOf="@+id/carsName" />
 

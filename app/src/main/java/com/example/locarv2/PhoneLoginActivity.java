@@ -20,7 +20,7 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.chaos.view.PinView;
 import com.example.locarv2.responses.APIClient;
 import com.example.locarv2.responses.APIInterface;
-import com.example.locarv2.responses.UserCredentials;
+import com.example.locarv2.Models.UserCredentials;
 import com.google.android.gms.auth.api.credentials.Credential;
 import com.google.android.gms.auth.api.credentials.Credentials;
 import com.google.android.gms.auth.api.credentials.CredentialsApi;
